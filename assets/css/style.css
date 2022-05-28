@@ -9,3 +9,99 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex
+}
+
+.cabecalho {
+    flex-basis: 30%;
+}
+
+.cabecalho__logo {
+    padding-bottom: 35px;
+}
+
+figcaption {
+    display: none;
+}
+
+.nav__item {
+    margin-bottom: 22px;
+}
+
+.nav__item img {
+    max-width: 26px;
+    margin-right: 10px;
+}
+
+.nav__item a {
+    color: #1a1919;
+    text-decoration: none;
+    vertical-align: text-top;
+}
+
+.principal {
+    flex-basis: 70%;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.titulo {
+    margin: 10px 30px;
+}
+
+.box__form {
+    padding: 10px 30px;
+    border-top: 1px solid #e7ecf0;
+    border-bottom: 10px solid #e7ecf0;
+    text-align: right;
+}
+
+.box__form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    height: 55px;
+}
+
+.box__form button {
+    background-color:  hsla(203, 89%, 53%, 0.4);
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 12px;
+}
+
+.feed__item {
+    padding: 20px 30px;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #ddd;
+}
+
+.box__post {
+    margin-left: 10px;
+}
+
+.box__post h2 {
+    display: inline-block;
+    font-weight: 500;
+}
+
+.box__post span {
+    display: inline-block;
+    color: #828282;
+    font-size: 15px;
+}
+
+.box__post p {
+    margin-top: 10px;
+    color: #333333;
+    font-size: 15px;
+    line-height: 22px;
+}

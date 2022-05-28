@@ -5,112 +5,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Ken-ti-vi</title>
 </head>
 
 <body>
-    <!-- Cabeçalho -->
-    <header class="cabecalho">
-        <!-- logo -->
-        <figure class="cabecalho__logo">
-            <img src="assets/img/logo.svg" alt="Logo twitter">
-            <figcaption hidden>Logo Twitter</figcaption>
-        </figure>
-
-        <!-- Navegação -->
-        <nav class="navbar">
-            <ul class="nav__box">
-                <li class="nav__item">
-                    <img src="assets/img/Home.png" alt="Home">
-                    <a href="#">Página Inicial</a>
-                </li>
-
-                <li class="nav__item>
-                    <img src="assets/img/Hashtag.png" alt="Hashtag">
-                    <a href="#">Explorar</a>
-                </li>
-
-                <li class="nav__item>
-                    <img src="assets/img/Notification.png" alt="Notification">
-                    <a href="#">Notificações</a>
-                </li>
-
-                <li class="nav__item>
-                    <img src="assets/img/mensege.png" alt="Menssagens">
-                    <a href="#">Mensagens</a>
-                </li>
-
-                <li class="nav__item>
-                    <img src="assets/img/save.png" alt="Salvo">
-                    <a href="#">Itens Salvos</a>
-                </li>
-
-                <li class="nav__item>
-                    <img src="assets/img/list.png" alt="lista">
-                    <a href="#">lista</a>
-                </li>
-
-                <li class="nav__item>
-                    <img src="assets/img/user1.png" alt="Perfil">
-                    <a href="#">Perfil</a>
-                </li>
-
-                <li class="nav__item>
-                    <img src="assets/img/options.png" alt="Mais">
-                    <a href="#">Mais</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Conteúdo Principal -->
-    <main class="principal">
-        <h3 class="titulo">Home</h3>
-        <!-- Formulário -->
-        <form action="#" class="box__form">
-            <textarea name="textTweet" placeholder="O que está acontecendo?"></textarea>
-            <button type="submit">Tweetar</button>
-        </form>
-
-        <!-- Feed de Notícias -->
-        <section class="feed">
-            <ul class="feed__box">
-                <li class="feed__item">
-                    <img src="assets/img/user2.png" alt="Perfil">
-                    <div class="box__post">
-                        <h2>Hudsom</h2>
-                        <span>@hudsomkenzie 14s</span>
-                        <p>
-                            MAIS DE 1 MILHÃO DE VAGAS! Artigos da Mckensey aponta que, até 2030, o Brasil terá um gargalo de mil profissionais de tecnologia. É hora de se preparar...#VouSerDev#DoZeroAoCodigo
-                        </p>
-                    </div>
-                </li>
-
-                <li class="feed__item>
-                    <img src="assets/img/user3.png" alt="Perfil">
-                    <div class="box__post">
-                        <h2>Daniel</h2>
-                        <span>@danielkenzie 14s</span>
-                        <p>
-                           Este é um Tweet. pode ser longo ou curto. Depende doque você tem a dizer. Ele pode ter algumas Hashtags também...#likethis
-                        </p>
-                    </div>
-                </li>
-
-                <li class="feed__item>
-                    <img src="assets/img/user1.png" alt="Perfil">
-                    <div class="box__post">
-                        <h2>Maria</h2>
-                        <span>@mariakenzie 14s</span>
-                        <p>
-                            98% de #empregabilidade? Só na Kenzie...Pois é, 98% dos alnos formados estão trabalhando na área em menos de um mês após a graduação #nimguemmesegura
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-    </main>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="cabecalho">
+            <!-- logo -->
+            <figure class="cabecalho__logo">
+                <img src="assets/img/logo.svg" alt="Logo twitter">
+                <figcaption hidden>Logo Twitter</figcaption>
+            </figure>
+            
+            <!-- Navegação -->
+            <nav class="navbar">
+                <ul class="nav__box">
+                    <li class="nav__item">
+                        <img src="assets/img/Home.png" alt="Home">
+                        <a href="#">Página Inicial</a>
+                    </li>
+                   <li class="nav__item">
+                       <img src="assets/img/Hashtag.png" alt="Hashtag">
+                       <a href="#">Explorar</a>
+                   </li>
+                   <li class="nav__item">
+                       <img src="assets/img/Notification.png" alt="Notificações">
+                       <a href="#">Notificações</a>
+                   </li>
+                   <li class="nav__item">
+                       <img src="assets/img/mensege.png" alt="Mensagens">
+                       <a href="#">Mensagens</a>
+                   </li>
+                   <li class="nav__item">
+                       <img src="assets/img/save.png" alt="Salvo">
+                       <a href="#">Itens Salvos</a>
+                   </li>
+                    <li class="nav__item">
+                        <img src="assets/img/list.png" alt="lista">
+                        <a href="#">lista</a>
+                    </li>
+                    <li class="nav__item">
+                        <img src="assets/img/user1.png" alt="Perfil">
+                        <a href="#">Perfil</a>
+                    </li>
+                    <li class="nav__item">
+                        <img src="assets/img/options.png" alt="Mais">
+                        <a href="#">Mais</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Conteúdo Principal -->
+        <main class="principal">
+            <h3 class="titulo">Home</h3>
+            <!-- Formulário -->
+            <form action="#" class="box__form">
+                <textarea name="textTweet" placeholder="O que está acontecendo?"></textarea>
+                <button type="submit">Tweetar</button>
+            </form>
+            <!-- Feed de Notícias -->
+            <section class="feed">
+                <ul class="feed__box">
+                    <li class="feed__item">
+                        <img src="assets/img/user2.png" alt="Perfil">
+                        <div class="box__post">
+                            <h2>Hudsom</h2>
+                            <span>@hudsomkenzie 14s</span>
+                            <p>
+                                MAIS DE 1 MILHÃO DE VAGAS! Artigos da Mckensey aponta que, até 2030, o Brasil terá um gargalo de mil profissionais de tecnologia. É hora de se preparar...#VouSerDev#DoZeroAoCodigo
+                            </p>
+                        </div>
+                    </li>
+                    <li class="feed__item">
+                        <img src="assets/img/user3.png" alt="Perfil">
+                        <div class="box__post">
+                            <h2>Daniel</h2>
+                            <span>@danielkenzie 14s</span>
+                            <p>
+                               Este é um Tweet. pode ser longo ou curto. Depende doque você tem a dizer. Ele pode ter algumas Hashtags também...#likethis
+                            </p>
+                        </div>
+                    </li>
+                    <li class="feed__item">
+                        <img src="assets/img/user1.png" alt="Perfil">
+                        <div class="box__post">
+                            <h2>Maria</h2>
+                            <span>@mariakenzie 14s</span>
+                            <p>
+                                98% de #empregabilidade? Só na Kenzie...Pois é, 98% dos alnos formados estão trabalhando na área em menos de um mês após a graduação #nimguemmesegura
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
