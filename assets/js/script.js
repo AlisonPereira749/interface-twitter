@@ -110,17 +110,16 @@ FUNÇÕES
 
 const textarea = document.querySelector('textarea')
 const tweetar = document.querySelector('button');
+const feed = document.querySelector("feed__box")
 
- function pegartweet(event) {
+function pegarTweet(event) {
     event.preventDefault();
-    console.log(textarea.value)
-
+    
     const tweetTextArea = textarea.value;
-    criarTweet = (tweetTextArea)
-
+    criarTweet(tweetTextArea)
 }
 
-tweetar.addEventListener('click', pegartweet)
+tweetar.addEventListener('click', pegarTweet)
 
 //CRIRAR O TWEET
 /**
@@ -134,15 +133,51 @@ tweetar.addEventListener('click', pegartweet)
 
 function criarTweet(tweetTexto) {
     //Texto
-    console.log(tweetTexto)
+    //console.log(tweetTexto)
+
+    let data = new Date();
+    let hora = data.getHours();
+    let minutos = data.getMinutes();
 
     //Objeto
     const tweet = {
         nome: "Daniel",
-        foto: "./src/img/user3.png",
+        foto: "assets/img/user3.png",
         usuario: "@danielkenzie",
-        texto: tweetTexto
+        texto: tweetTexto,
+        tempo: `${hora}:${minutos}`
     }
-    console.log(tweet.nome)
+    criarTemplateTweet(tweet)
 }
 
+//Publicar Tweet
+function criarTemplateTweet (tweet) {
+    //DESESTRUTURAR  OS ELEMENTOS
+    const {nome,foto,usuario,texto,tempo} = tweet
+
+    //CRIANDO ELEMENTOS PARA CRIAR O TEMPLATE
+    let li = document.createElement("li");
+    let img = document.createElement("img");
+    img.src = foto
+
+    let div = document.createElement("div");
+    let h2 = document.createElement("h2");
+    h2.innerText = nome
+
+    let span = document.createElement("span");
+    span.innerText = `${usuario} - ${tempo}`
+
+    let p = document.createElement("p");
+    p.innerText = texto
+
+    //ADCIONANDO OS ELEMENTOS DENTRO DA LI
+    li.appendChild(img)
+    li.appendChild(div)
+
+    //ADCIONANDO OS ELEMENTOS DENTRO DA div
+    div.appendChild(h2)
+    div.appendChild(span)
+    div.appendChild(p)
+
+    feed.appendChild(li)
+}
