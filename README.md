@@ -26,8 +26,7 @@ Projeto desenvolvido na parte 3 da maratona de programação da Kenzie Academy B
 
 ### Cores
 
-- Azul principal:
-;
+- Azul principal: #1da1f2;;
     - Opacidade: 0.4;
 - Cinza: #828282;
 - Cinza escuro: #333333;
